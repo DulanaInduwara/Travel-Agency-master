@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE html>
+      <html lang="en">
+      <head>
+      <meta charset="UTF-8">
+      <title><!DOCTYPE html>
+      <html lang="en">
+      <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>H-Admin</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f0f0f0;
+    }
+
+    .side-picture {
+
+      background-image: url('../../images/hotel.png'); /* Replace with your side picture URL */
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100vh;
+      float: left;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .form-container h2 {
+      color: #333;
+    }
+
+    .form-container label {
+      color: #333;
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="password"],
+    .form-container input[type="date"],
+    .form-container input[type="tel"],
+    .form-container input[type="email"],
+    .form-container select {
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      color: #333;
+    }
+
+    .form-container button {
+      background-color: #9fd0da;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+    }
+
+    .form-container button:hover {
+      background-color: #b3a492;
+    }
+    #password{
+      top: -85px;
+      left: 300px;
+    }
+    #role{
+      top: -85px;
+    }
+    #dob{
+      top: -80px;
+      left: 300px;
+    }
+    #nic,#address{
+      top: -330px;
+    }
+    #phone{
+      top: -255px;
+      left: 300px;
+    }
+    #email{
+      top: -250px;
+    }
+    #gender{
+      top: -335px;
+
+    }
+    #nic-image{
+      top: -330px;
+    }
+    #user-image{
+      top: -405px;
+      left: 300px;
+    }
+    #button{
+      top: -580px;
+      left: 315px;
+    }
+    /* Custom styling for the form container */
+    .form-container {
+      background-color: #f9f9f9;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Style the form's title */
+    .form-container h2 {
+      color: #333;
+      text-align: center;
+    }
+
+    /* Style labels and input fields */
+    .form-group label {
+      font-weight: bold;
+      color: #9fd0da; /* Change label text color to a primary color */
+    }
+
+    .form-control {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    /* Style the submit button */
+    #button {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    /* Add a background color to the submit button */
+    #button:hover {
+      background-color: #9fd0da;
+    }
+
+    /* Custom styling for the background picture */
+    .side-picture {
+      background-image: url('../../images/hotel.png'); /* Replace with your image URL */
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100vh;
+      float: left;
+
+    }
+
+    /* Style input types with background color */
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    input[type="tel"],
+    input[type="email"],
+    select {
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* Add hover effect to the input fields */
+    input[type="text"]:hover,
+    input[type="password"]:hover,
+    input[type="date"]:hover,
+    input[type="tel"]:hover,
+    input[type="email"]:hover,
+    select:hover {
+      background-color: #e6e6e6;
+    }
+
+    /* Style file input */
+    .form-control-file {
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    /* Style the file input label */
+    .form-control-file:hover {
+      background-color: #e6e6e6;
+    }
+
+    /* Custom styling for the form container */
+    .form-container {
+      /* Set the maximum width as per your design */
+      max-height: 700px;
+      margin: 0 auto; /* Center the container horizontally */
+      background-color: #f9f9f9;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    #ID{
+      top: -400px;
+    }
+    #exp{
+      top: -485px;
+      left: 300px;
+    }
+    #value{
+      top: -490px;
+    }
+
+  </style>
+</head>
+<body>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-5 side-picture"></div>
+    <div class="col-md-7">
+      <div class="form-container">
+
+        <form>
+
+          <div class="form-group col-md-12">
+            <label for="id">Hotel ID:</label>
+            <input type="text" class="form-control" id="userid" placeholder="Enter Hotel ID" required>
+          </div>
+
+          <div class="form-group col-md-12"id="name">
+            <label for="name">Hotel Name:</label>
+            <input type="text" class="form-control" id="username" placeholder="Enter Hotel Name" required>
+          </div>
+          <div class="form-group col-md-6" id="package">
+            <label for="package">Hotel Category:</label>
+            <select class="form-control"  required>
+              <option value="male">Regular</option>
+              <option value="female">Mid-Range</option>
+              <option value="other">Luxury</option>
+              <option value="other">Super-Luxury</option>
+            </select>
+          </div>
+
+          <div class="form-group col-md-12" id="role">
+            <label for="role">Hotel Location:</label>
+            <input type="text" class="form-control"  placeholder="Enter Hotel Location" required>
+          </div>
+
+          <div class="form-group col-md-12" id="location">
+            <label for="location">Hotel Location With Coordinates:</label>
+            <input type="text" class="form-control"  placeholder="Enter Hotel Location With Coordinates" required>
+          </div>
+          <div class="form-group col-md-9" id="email">
+            <label for="nic">Hotel Email:</label>
+            <input type="text" class="form-control"  placeholder="Enter Hotel Email" required>
+          </div>
+
+          <div class="form-group col-md-9" id="nic">
+            <label for="nic">Hotel Contact Number:</label>
+            <input type="text" class="form-control"  placeholder="Enter Hotel Contact Number" required>
+          </div>
+          <!--          <div class="form-group col-md-6" id="address">-->
+          <!--            <label for="address">Address:</label>-->
+          <!--            <input type="text" class="form-control"  placeholder="Enter your address" required>-->
+          <!--&lt;!&ndash;          </div>&ndash;&gt;-->
+
+          <!--          <div class="form-group col-md-6" id="phone">-->
+          <!--            <label for="phone">Phone:</label>-->
+          <!--            <input type="tel" class="form-control"  placeholder="Enter your phone number" required>-->
+          <!--          </div>-->
+          <!--          <div class="form-group col-md-6" id="email">-->
+          <!--            <label for="email">Email Address:</label>-->
+          <!--            <input type="email" class="form-control"  placeholder="Enter your email address" required>-->
+          <!--          </div>-->
+
+          <div class="form-group col-md-6"  id="nic-image">
+            <label for="nic-image">Upload Guide Image:</label>
+            <input type="file" class="form-control-file" accept="image/*" required>
+          </div>
+          <div class="form-group col-md-6" id="user-image">
+            <label for="user-image">Upload Nic Scanned Image:</label>
+            <input type="file" class="form-control-file"  accept="image/*" required>
+          </div>
+
+          <div class="form-group col-md-6" id="ID">
+            <label for="user-image">Guide ID Scanned Image:</label>
+            <input type="file" class="form-control-file"  accept="image/*" required>
+          </div>
+          <div class="form-group col-md-6" id="exp">
+            <label for="exp">Experience:</label>
+            <input type="text" class="form-control"  placeholder="Enter Guide Experience" required>
+          </div>
+          <div class="form-group col-md-6" id="value">
+            <label for="value">Guide Day Value:</label>
+            <input type="text" class="form-control"  placeholder="Enter Guide Day Value" required>
+          </div>
+
+          <button type="submit " class="btn btn-primary col-md-4" id="button">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+</title>
+</head>
+<body>
+
+</body>
+</html></title>
+</head>
+<body>
+
+</body>
+</html>

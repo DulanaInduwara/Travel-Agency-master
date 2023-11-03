@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE html>
+      <html lang="en">
+      <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Creative Registration Form</title>
+  <script src="../../js/Guide.js"></script>
+  <script src="jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f0f0f0;
+    }
+
+    .side-picture {
+
+      background-image: url('../../images/payment.png'); /* Replace with your side picture URL */
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100vh;
+      float: left;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .form-container h2 {
+      color: #333;
+    }
+
+    .form-container label {
+      color: #333;
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="password"],
+    .form-container input[type="date"],
+    .form-container input[type="tel"],
+    .form-container input[type="email"],
+    .form-container select {
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      color: #333;
+    }
+
+    .form-container button {
+      background-color: #cf5c98;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+    }
+
+    .form-container button:hover {
+      background-color: #b3a492;
+    }
+    #password{
+      top: -85px;
+      left: 300px;
+    }
+    #role{
+      top: -85px;
+    }
+    #dob{
+      top: -80px;
+
+    }
+    #nic,#address {
+      top: 0px;
+    }
+
+    #button{
+      top: -20px;
+      left: 15px;
+    }
+    /* Custom styling for the form container */
+    .form-container {
+      background-color: #f9f9f9;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Style the form's title */
+    .form-container h2 {
+      color: #333;
+      text-align: center;
+    }
+
+    /* Style labels and input fields */
+    .form-group label {
+      font-weight: bold;
+      color: #cf5c98; /* Change label text color to a primary color */
+    }
+
+    .form-control {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    /* Style the submit button */
+    #button {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    /* Add a background color to the submit button */
+    #button:hover {
+      background-color: #cf5c98;
+    }
+
+    /* Custom styling for the background picture */
+    .side-picture {
+      background-image: url('../../images/payment.png'); /* Replace with your image URL */
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100vh;
+      float: left;
+
+    }
+
+    /* Style input types with background color */
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    input[type="tel"],
+    input[type="email"],
+    select {
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* Add hover effect to the input fields */
+    input[type="text"]:hover,
+    input[type="password"]:hover,
+    input[type="date"]:hover,
+    input[type="tel"]:hover,
+    input[type="email"]:hover,
+    select:hover {
+      background-color: #e6e6e6;
+    }
+
+    /* Style file input */
+    .form-control-file {
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    /* Style the file input label */
+    .form-control-file:hover {
+      background-color: #e6e6e6;
+    }
+
+    /* Custom styling for the form container */
+    .form-container {
+      /* Set the maximum width as per your design */
+      max-height: 700px;
+      margin: 0 auto; /* Center the container horizontally */
+      background-color: #f9f9f9;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    #ID{
+      top: -400px;
+    }
+    #exp{
+      top: -0px;
+
+    }
+    #value{
+      top: -490px;
+    }
+    #username{
+      top: 90px;
+    }
+
+    /*table---------------
+
+*/
+    body {
+      font-family:"Times New Roman";
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    th {
+      background-color: #cf5c98;
+      color: #fff;
+    }
+
+    td.image-cell {
+      text-align: center;
+    }
+
+    img {
+      max-width: 100px;
+      max-height: 100px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    tr:hover {
+      background-color: #f8bdeb;
+      color: #fff;
+    }
+
+
+  </style>
+</head>
+<body>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-5 side-picture"></div>
+    <div class="col-md-7">
+      <div class="form-container">
+
+        <form>
+          <div class="form-group col-md-7"  id="username">
+            <label for="username">Payment Amount:</label>
+            <input type="text" class="form-control" placeholder="Enter Payment Amount" id="paymentAmoun">
+          </div>
+          <div class="form-group col-md-6"  id="dob">
+            <label for="dob">Payment Date:</label>
+            <input type="date" class="form-control" id="paymentDate">
+          </div>
+
+          <div class="form-group col-md-7" id="nic">
+            <label for="nic">User ID:</label>
+            <input type="text" class="form-control"  placeholder="Enter User ID" id="userID ">
+          </div>
+
+          <div class="form-group col-md-7" id="exp">
+            <label for="exp">Package Details ID:</label>
+            <input type="text" class="form-control"  placeholder="Enter Package Details ID" id="packageDetailsID " >
+          </div>
+
+
+          <button type="submit " class="btn btn-primary col-md-4" id="button">Submit</button>
+
+
+
+        </form>
+        <table>
+          <thead>
+          <tr>
+            <th>UserID</th>
+            <th>Date</th>
+            <th>Amount</th>
+            <th>PackageDetail ID</th>
+
+
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>U001</td>
+            <td>2023-09-08</td>
+            <td>$ 230</td>
+            <td>P001</td>
+
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<!--<div class="container mt-5">-->
+<!--  <div class="row">-->
+<!--    <div class="col-md-14 "></div>-->
+<!--    <div class="col-md-13">-->
+<!--      <div class="form-container">-->
+<!--        <table>-->
+<!--          <thead>-->
+<!--          <tr>-->
+<!--            <th>UserID</th>-->
+<!--            <th>Date</th>-->
+<!--            <th>Amount</th>-->
+<!--            <th>PackageDetail ID</th>-->
+
+
+<!--          </tr>-->
+<!--          </thead>-->
+<!--          <tbody>-->
+<!--          <tr>-->
+<!--            <td>U001</td>-->
+<!--            <td>2023-09-08</td>-->
+<!--            <td>$ 230</td>-->
+<!--            <td>P001</td>-->
+
+<!--          </tr>-->
+
+<!--          &lt;!&ndash; Add more rows as needed &ndash;&gt;-->
+<!--          </tbody>-->
+<!--        </table>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+</title>
+</head>
+<body>
+
+</body>
+</html>

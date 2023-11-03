@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U-Admin</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f0f0f0;
+        }
+
+        .side-picture {
+
+            background-image: url('user.png'); /* Replace with your side picture URL */
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100vh;
+            float: left;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-container h2 {
+            color: #333;
+        }
+
+        .form-container label {
+            color: #333;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="password"],
+        .form-container input[type="date"],
+        .form-container input[type="tel"],
+        .form-container input[type="email"],
+        .form-container select {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            color: #333;
+        }
+
+        .form-container button {
+            background-color: #e4ab86;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+        }
+
+        .form-container button:hover {
+            background-color: #e4ab86;
+        }
+        #password{
+            top: -170px;
+            left: 300px;
+        }
+        #role{
+            top:-85px;
+        }
+        #dob{
+            top: -170px;
+            left: 300px;
+        }
+        #nic,#address{
+            top: -255px;
+        }
+        #phone{
+            top: -340px;
+            left: 300px;
+        }
+        #email{
+            top: -335px;
+        }
+        #gender{
+            top: -420px;
+            left: 300px;
+        }
+        #nic-image{
+            top: -415px;
+        }
+        #user-image{
+            top: -495px;
+            left: 300px;
+        }
+        #button{
+            top: -510px;
+            left: 200px;
+        }
+        /* Custom styling for the form container */
+        .form-container {
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Style the form's title */
+        .form-container h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        /* Style labels and input fields */
+        .form-group label {
+            font-weight: bold;
+            color: #e4ab86; /* Change label text color to a primary color */
+        }
+
+        .form-control {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        /* Style the submit button */
+        #button {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        /* Add a background color to the submit button */
+        #button:hover {
+            background-color: #e4ab86;
+        }
+
+        /* Custom styling for the background picture */
+        .side-picture {
+            background-image:url('user.png'); /* Replace with your image URL */
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100vh;
+            float: left;
+
+        }
+
+
+        /* Style input types with background color */
+        input[type="text"],
+        input[type="password"],
+        input[type="date"],
+        input[type="tel"],
+        input[type="email"],
+        select {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Add hover effect to the input fields */
+        input[type="text"]:hover,
+        input[type="password"]:hover,
+        input[type="date"]:hover,
+        input[type="tel"]:hover,
+        input[type="email"]:hover,
+        select:hover {
+            background-color: #e6e6e6;
+        }
+
+        /* Style file input */
+        .form-control-file {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        /* Style the file input label */
+        .form-control-file:hover {
+            background-color: #e6e6e6;
+        }
+
+        /* Custom styling for the form container */
+        .form-container {
+             /* Set the maximum width as per your design */
+            max-height: 700px;
+            margin: 0 auto; /* Center the container horizontally */
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        /*table---------------
+
+    */
+        body {
+            font-family:"Times New Roman";
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        th {
+            background-color: #e4ab86;
+            color: #fff;
+        }
+
+        td.image-cell {
+            text-align: center;
+        }
+
+        img {
+            max-width: 100px;
+            max-height: 100px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #fae7c9;
+            color: #fff;
+        }
+        #name   {
+            left: 300px;
+            top: -85px;
+        }
+    </style>
+</head>
+<body>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-5 side-picture"></div>
+        <div class="col-md-7">
+            <div class="form-container">
+
+                <form>
+                    <div class="form-group col-md-6">
+                        <label for="username">User ID:</label>
+                        <input type="text" class="form-control" id="userId" placeholder="Enter your ID" required>
+                    </div>
+                    <div class="form-group col-md-6" id="name">
+                        <label for="username">Username:</label>
+                        <input type="text" class="form-control" id="username" placeholder="Enter your username" required>
+                    </div>
+
+                    <div class="form-group col-md-6" id="role">
+                        <label for="role">Password:</label>
+                        <input type="password" class="form-control"  placeholder="Enter your password" required>
+                    </div>
+                    <div class="form-group col-md-6" id="password">
+                        <label for="password">Role:</label>
+                        <input type="text" class="form-control"  placeholder="Enter your role" required>
+                    </div>
+                    <div class="form-group col-md-6"  id="dob">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" class="form-control" required>
+                    </div>
+                    <div class="form-group col-md-6" id="nic">
+                        <label for="nic">NIC:</label>
+                        <input type="text" class="form-control"  placeholder="Enter your NIC" required>
+                    </div>
+                    <div class="form-group col-md-6" id="address">
+                        <label for="address">Address:</label>
+                        <input type="text" class="form-control"  placeholder="Enter your address" required>
+                    </div>
+
+                    <div class="form-group col-md-6" id="phone">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" class="form-control"  placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="form-group col-md-6" id="email">
+                        <label for="email">Email Address:</label>
+                        <input type="email" class="form-control"  placeholder="Enter your email address" required>
+                    </div>
+                    <div class="form-group col-md-6" id="gender">
+                        <label for="gender">Gender:</label>
+                        <select class="form-control"  required>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6"  id="nic-image">
+                        <label for="nic-image">Upload NIC Image:</label>
+                        <input type="file" class="form-control-file" accept="image/*" required>
+                    </div>
+                    <div class="form-group col-md-6" id="user-image">
+                        <label for="user-image">Upload User Image:</label>
+                        <input type="file" class="form-control-file"  accept="image/*" required>
+                    </div>
+                    <button type="submit " class="btn btn-primary col-md-4" id="button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-14 "></div>
+        <div class="col-md-13">
+            <div class="form-container">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>UserId</th>
+                        <th>Name</th>
+                        <th>Password</th>
+                        <th>Role</th>
+                        <th>Nic</th>
+                        <th>Address</th>
+                        <th>Age</th>
+                        <th>Contact</th>
+                        <th>Gender</th>
+                        <th>NIC Image</th>
+                        <th>User Image</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>U001</td>
+                        <td>Dulana Induwara</td>
+                        <td>********</td>
+                        <td>BusinessMan</td>
+                        <td>200124902494</td>
+                        <td>Mathugama</td>
+                        <td>22</td>
+                        <td>(+94) 717292664</td>
+                        <td>Male</td>
+                        <td class="image-cell">
+                            <img src="nic_image_1.jpg" alt="Nic Image">
+                        </td>
+                        <td class="image-cell">
+                            <img src="nic_image_1.jpg" alt="User Image">
+                        </td>
+
+
+
+                    </tr>
+
+                    <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

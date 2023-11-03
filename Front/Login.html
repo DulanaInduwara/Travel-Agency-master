@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Login Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 20px;
+            width: 350px;
+        }
+
+        .login-container h2 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group input {
+            border: none;
+            border-bottom: 2px solid #9c88ff;
+            border-radius: 0;
+            box-shadow: none;
+            background-color: transparent;
+            padding: 10px;
+        }
+
+        .form-group input:focus {
+            box-shadow: none;
+        }
+
+        .login-button {
+            background-color: #9c88ff;
+            color: #fff;
+            border: none;
+            border-radius: 25px;
+            padding: 10px 20px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .login-button:hover {
+            background-color: #9c88ff;
+        }
+        form,h2{
+            position: relative;
+            top: -50px;
+        }
+    </style>
+</head>
+<body>
+<div class="container login-container">
+    <img src="../images/LoginForm.svg" alt="" width="300px">
+    <h2>Login</h2>
+    <form>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Username">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <select class="form-control">
+                <option value="option1">Guide Admin</option>
+                <option value="option2">Package Admin</option>
+                <option value="option3">Vehicle Admin</option>
+                <option value="option3">Hotel Admin</option>
+                <option value="option3">User Admin</option>
+
+            </select>
+        </div>
+        <button type="submit" class="btn login-button">Login</button>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

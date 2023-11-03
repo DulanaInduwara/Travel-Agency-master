@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Creative Table with ID, Name, Address, Contact, Date of Birth, and NIC Image</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        th {
+            background-color: #4790d8;
+            color: #fff;
+        }
+
+        td.image-cell {
+            text-align: center;
+        }
+
+        img {
+            max-width: 100px;
+            max-height: 100px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #b3a492;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Contact</th>
+        <th>Date of Birth</th>
+        <th>NIC Image</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>John Doe</td>
+        <td>123 Main St</td>
+        <td>(123) 456-7890</td>
+        <td>1990-05-15</td>
+        <td class="image-cell">
+            <img src="nic_image_1.jpg" alt="NIC Image">
+        </td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Jane Smith</td>
+        <td>456 Elm St</td>
+        <td>(234) 567-8901</td>
+        <td>1988-09-28</td>
+        <td class="image-cell">
+            <img src="nic_image_2.jpg" alt="NIC Image">
+        </td>
+    </tr>
+    <!-- Add more rows as needed -->
+    </tbody>
+</table>
+</body>
+</html>
